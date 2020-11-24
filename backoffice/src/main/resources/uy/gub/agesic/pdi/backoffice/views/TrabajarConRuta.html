@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<body>
+	<wicket:extend>
+
+		<form wicket:id="trabajarConRutaForm">
+
+			<div class="page-title clearfix">
+				<h1 class="header">Trabajar con ruta</h1>
+				<div class="text-right">
+					<a wicket:id="linkVolver">Volver al listado de rutas</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<fieldset>
+						<div class="form-group">
+							<label>Direcci&oacute;n l&oacute;gica *</label>
+							<input wicket:id="logical" class="form-control" type="text">
+							<div wicket:id="logicalFeedback"></div>
+						</div>
+
+						<div class="form-group">
+							<label>Direcci&oacute;n f&iacute;sica *</label>
+							<input wicket:id="physical" class="form-control" type="text">
+							<div wicket:id="physicalFeedback"></div>
+						</div>
+
+						<div class="form-group">
+							<label>Direcci&oacute;n base</label>
+							<input wicket:id="baseURI" class="form-control" type="text">
+							<div wicket:id="baseURIFeedback"></div>
+						</div>
+
+						<div class="form-group">
+							<label>Degradable</label>
+									<input wicket:id="degraded" type="checkbox" width="40px">
+							<div wicket:id="degradedFeedback"></div>
+						</div>
+
+						<div class="form-group">
+							<label>Tiempo (ms)</label>
+							<input wicket:id="degradeTimeout" class="form-control" type="number">
+							<div wicket:id="degradeTimeoutFeedback"></div>
+						</div>
+
+						<div class="form-group">
+							<label>Cantidad de Permitidos (Threads)</label>
+							<input wicket:id="degradePermits" class="form-control" type="number">
+							<div wicket:id="degradePermitsFeedback"></div>
+						</div>
+
+						<div class="btn-group">
+							<button wicket:id="btnGuardar" class="btn btn-primary">Guardar</button>
+						</div>
+					</fieldset>
+				</div>
+
+			</div>
+
+		</form>
+
+	</wicket:extend>
+</body>
+</html>

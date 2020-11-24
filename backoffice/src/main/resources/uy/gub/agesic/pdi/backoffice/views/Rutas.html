@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<body>
+		<wicket:extend>	
+		
+			<form wicket:id="rutasForm">
+
+				<div class="page-title clearfix">
+			  		<h1 class="header">Rutas</h1>
+			  	</div>
+		
+				<div class="row">
+		
+					<div class="col-sm-12">
+		
+						<div class="well filters">
+		
+							<div class="form-group clearfix">
+		
+								<div class="row">
+		
+									<div class="col-sm-1 col-lg-6">
+										<div class="input-group">
+											<div class="input-group-addon">
+												Direcci&oacute;n l&oacute;gica
+											</div>
+											<input class="form-control" type="text" wicket:id="logical"></input>
+										</div>
+									</div>
+	
+									<div class="col-sm-6 col-lg-6">
+										<div class="input-group">
+											<div class="input-group-addon">
+												Direcci&oacute;n f&iacute;sica
+											</div>
+											<input class="form-control" type="text" wicket:id="physical"></input>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="row">&nbsp;</div>
+
+								<div class="row">
+									<div class="col-sm-1 col-lg-10">
+										<div class="input-group">
+											<div class="input-group-addon">
+												Direcci&oacute;n base
+											</div>
+											<input class="form-control" type="text" wicket:id="baseURI"></input>
+										</div>
+									</div>
+	
+									<div class="col-sm-12 col-lg-1">
+										<input type="submit" class="btn btn-primary pull-right" wicket:id="buscar" value="Buscar" />
+									</div>
+									<div class="col-sm-12 col-lg-1">
+										<input type="submit" class="btn btn-primary pull-right" wicket:id="limpiarFiltros" value="Limpiar Filtros" />
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<span wicket:id="group">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th width="30px">
+											<input type="checkbox" wicket:id="groupSelector"></input>
+										</th>
+										<th>Direcci&oacute;n L&oacute;gica</th>
+										<th>Direcci&oacute;n F&iacute;sica</th>
+										<th>Direcci&oacute;n Base</th>
+										<th>Degradable</th>
+										<th>Tiempo</th>
+										<th>Permitidos</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr wicket:id="rows">
+										<td class="vcenter">
+			                				<input type="checkbox" wicket:id="dataRowSelector"/>
+			                			</td>
+			                			<td>
+			                				<a wicket:id="dataRowLink" title="Trabajar con esta ruta">
+			                					<span wicket:id="dataRowLogical"></span>
+			                				</a>
+			                			</td>
+			                			<td wicket:id="dataRow"></td>
+									</tr>							
+								</tbody>
+							</table>
+						</span>
+
+						<div class="pagination-area pull-right">
+							<span wicket:id="pagingNavigator"></span>
+						</div>		
+		
+						<div class="pull-left">
+							<div class="btn-group">
+								<input type="submit" class="btn btn-primary" wicket:id="agregar" value="Agregar" />
+								<input type="submit" class="btn btn-primary" wicket:id="modificar" value="Editar" />
+								<input type="submit" class="btn btn-primary" wicket:id="eliminar" value="Eliminar" />
+							</div>
+						</div>
+		
+					</div>
+	
+				</div>
+
+			</form>
+			
+		</wicket:extend>		
+		
+	</body>
+</html>
