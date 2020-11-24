@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>uy.gub.agesic</groupId>
+		<artifactId>pdi-router</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>router-service</artifactId>
+	<packaging>jar</packaging>
+
+	<name>pdi:router-service</name>
+
+	<properties>
+		<start-class>uy.gub.agesic.pdi.services.router.RouterServiceApplication</start-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>uy.gub.agesic.pdi</groupId>
+			<artifactId>common-utiles</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>uy.gub.agesic.pdi</groupId>
+			<artifactId>common-webproxy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<testResources>
+			<testResource>
+				<directory>src/main/resources</directory>
+			</testResource>
+		</testResources>
+	</build>
+</project>
+

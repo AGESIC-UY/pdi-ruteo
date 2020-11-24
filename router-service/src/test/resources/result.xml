@@ -1,0 +1,29 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsa:To soapenv:mustUnderstand="0">http://localhost:7801/Service</wsa:To>
+		<wsa:From>
+			<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+		</wsa:From>
+		<wsa:ReplyTo>
+			<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+			<wsa:ReferenceParameters>
+				<Example_ns:Parameter2 xmlns:Example_ns="http://ibm.namespace">Ping</Example_ns:Parameter2>
+				<Parameter1>Message Broker</Parameter1>
+			</wsa:ReferenceParameters>
+		</wsa:ReplyTo>
+		<wsa:FaultTo>
+			<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+			<wsa:ReferenceParameters>
+				<Example_ns:Parameter2 xmlns:Example_ns="http://ibm.namespace">FAULT</Example_ns:Parameter2>
+				<Parameter1>Ping</Parameter1>
+			</wsa:ReferenceParameters>
+		</wsa:FaultTo>
+		<wsa:MessageID>urn:uuid:020C911C16EB130A8F1204119836321</wsa:MessageID>
+		<a:Action xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:e="http://schemas.xmlsoap.org/soap/envelope/">RRRRRRRRRRRRRRRResponseeeeeeeeeee</a:Action>
+	</soapenv:Header>
+	<SOAP-ENV:Body>
+		<ns3:GetTimestampResponse xmlns:ns3="http://www.agesic.gub.uy/soa">
+			<TimeStamp>2017-09-18T21:26:16.717Z</TimeStamp>
+		</ns3:GetTimestampResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
