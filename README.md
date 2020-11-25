@@ -6,14 +6,11 @@ La plataforma de interoperabilidad de AGESIC es una solución que brinda capacid
 ## Descripción de la solución
 Esta solución plantea el uso de una arquitectura orientada a microservicios. De esta forma, los principales servicios de la misma estarán descompuestos en este tipo de servicios, donde cada uno de estos tendrá una responsabilidad acotada a nivel de negocio.
 
-La arquitectura orientada a microservicios es un método de desarrollo de aplicaciones de software como un conjunto de servicios pequeños, independientes, desplegables, y
-modulares en el que cada uno se ejecuta en un proceso único y se comunica a través de un mecanismo bien definido, ligero para servir en general a un único objetivo de
-negocio.
+La arquitectura orientada a microservicios es un método de desarrollo de aplicaciones de software como un conjunto de servicios pequeños, independientes, desplegables, y modulares en el que cada uno se ejecuta en un proceso único y se comunica a través de un mecanismo bien definido, ligero para servir en general a un único objetivo de negocio.
 
 Estos servicios están construidos sobre las capas de negocio y con independencia de despliegue. La forma en la cual los microservicios se comunican entre sí depende de los requisitos de cada aplicación, sin embargo se suele utilizar HTTP/REST con JSON. En la mayoría de los casos, REST (Representational State Transfer) el cual es un método de integración útil debido a su baja complejidad.
 
-Hay un mínimo de gestión centralizada de estos servicios, que pueden estar escritos en lenguajes de programación diferentes y que pueden utilizar diferentes tecnologías de almacenamiento de datos. La arquitectura orientada a microservicios pone cada elemento de funcionalidad en un servicio separado y los escala mediante la distribución
-de estos servicios a través de servidores o procesos nuevos, según sea necesario replicar.
+Hay un mínimo de gestión centralizada de estos servicios, que pueden estar escritos en lenguajes de programación diferentes y que pueden utilizar diferentes tecnologías de almacenamiento de datos. La arquitectura orientada a microservicios pone cada elemento de funcionalidad en un servicio separado y los escala mediante la distribución de estos servicios a través de servidores o procesos nuevos, según sea necesario replicar.
 
 La solución contara con una serie de servicios básicos, los cuales proveen las funcionalidades iniciales del middleware, requeridas para que los demás microservicios
 puedan operar en la plataforma. En el diagrama podemos apreciar:
@@ -45,6 +42,21 @@ _En construcción_
 
 ## Contacto
 Por cualquier duda o consulta, puede comunicarse a arquitectura@agesic.gub.uy
+
+---
+
+## Introduction
+AGESIC's interoperability platform is a solution that provides integration and middleware capabilities between service providers and consumers. It provides the functionality of routing of invocations to services, among others, allowing to hide endpoints from consumers and operate transparently with them. All invocations to services through the platform will be redirected through the routing service.
+
+## Solution description
+
+
+## Execution
+
+
+## Contact
+If you require any further information, please contact arquitectura@agesic.gub.uy
+
 
 
 
