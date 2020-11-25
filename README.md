@@ -40,6 +40,9 @@ Para finalizar, a nivel lógico la estructura de los microservicio es la de una 
 - **Integración**: Si el microservicio necesita acceder a otros microservicios o consumir recursos que externos, esta capa se encarga de resolver el acceso a los mismos.
 - **DTO / Utilidades**: Las clases utilitarias usadas por este microservicio, los objetos de transferencia y cualquier biblioteca necesaria para que el mismo pueda operar, se encuentra en esta capa.
 
+## Ejecución
+_En construcción_
+
 ## Contacto
 Por cualquier duda o consulta, puede comunicarse a arquitectura@agesic.gub.uy
 
