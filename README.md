@@ -40,6 +40,8 @@ Para finalizar, a nivel lógico la estructura de los microservicio es la de una 
 ## Ejecución
 _En construcción_
 
+![alt text](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
+
 ## Contacto
 Por cualquier duda o consulta, puede comunicarse a arquitectura@agesic.gub.uy
 
