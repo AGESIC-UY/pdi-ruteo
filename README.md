@@ -18,14 +18,14 @@ puedan operar en la plataforma. En el diagrama podemos apreciar:
 ![Microservicios utilizados en el Ruteo](https://github.com/AGESIC-UY/ruteo-pdi/blob/main/image.png?raw=true)
 
 - **Configuración**: Este servicio brinda el soporte de configuración necesario para que los microservicios de la plataforma puedan obtenerla desde un lugar centralizado. El servicio almacena la configuración en un servidor centralizado (en este caso GIT), permitiendole a los diferentes microservicios registrados la posibilidad de obtener y refrescar sus parámetros de configuración dinámicamente.
-- **Registro**: El registro provee un servicio para que los microservicios puedan entre sí. Disponibiliza funcionalidades que le permiten a los demás servicios registrar un endpoint que pueda ser invocado por otros servicios y a su vez, otras funcionalidades para consultar el estado de los servicios así como refrescar los mismos.
+- **Registro**: El registro provee un servicio para que los microservicios puedan comunicarse entre sí. Disponibiliza funcionalidades que le permiten a los demás servicios registrar un endpoint que pueda ser invocado por otros servicios y a su vez, otras funcionalidades para consultar el estado de los servicios así como refrescar los mismos.
 - **Ruteador**: Implementa la funcionalidad de negocio de ruteo de la PDI. Este servicio expone una interfaz REST y SOAP para resolver el ruteo hacia los servicios registrados en la configuración de ruteo de la plataforma.
 - **Timestamp**: Este servicio provee una interfaz SOAP para obtener una marca de tiempo de la plataforma.
 - **Backoffice**: Es una aplicación que permite administrar la configuración de los servicios de configuración de la plataforma. Brinda una interfaz web que puede ser usada por usuarios autorizados por la plataforma para ajustar dicha configuración.
 - **Dashboard**: Este servicio provee las funcionalidades de agregación de datos, relacionados con los diferentes _circuit breakers_ definidos en la plataforma.
 - **Edge** _(No utilizado en PDI)_: Para aplicaciones externas al middleware o servicios que deseen consumir un servicio de la plataforma, el servicio de borde (Edge) permite rutear invocaciones externas en invocaciones internas.
 
-Es importante aclarar que dentro de este proyecto se encuentran unicamente los microservicios _Ruteador_, _Timestamp_ y _Backoffice_, ya que los restantes (junto con otros artefactos) se encuentra en proyectos aparte, dado que son funcionalidades core para otros proyectos. Los proyectos que necesarios para ejecutar el Ruteo los puede encontrar ![aquí](URL).
+Es importante aclarar que dentro de este proyecto se encuentran unicamente los microservicios _Ruteador_, _Timestamp_ y _Backoffice_, ya que los restantes (junto con otros artefactos) se encuentra en proyectos aparte, dado que son funcionalidades core para otros proyectos. Los proyectos que necesarios para ejecutar el Ruteo los puede encontrar ![aquí](https://github.com/AGESIC-UY/pdi-core).
 
 Para finalizar, a nivel lógico la estructura de los microservicio es la de una aplicación web estándar en capas. En el siguiente diagrama se aprecia dicha estructura.
 
